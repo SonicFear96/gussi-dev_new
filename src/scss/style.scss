@@ -1,3 +1,5 @@
+@import "./global.scss";
+
 @font-face {
   font-family: "rajdhaniregular";
   src: url("../fonts/rajdhani-webfont.woff2") format("woff2"),
@@ -15,16 +17,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --white: #ffffff;
-  --violet: #192b3f;
-  --violet-hover: #2e4055;
-  --violet-active: #3b536d;
-  --bluesh-grey: #8a94a6;
-  --light-grey: #e1e6ed;
-  --blue: #3d5876;
-  --sandy: #c9b8a8;
-}
 /* 
   tablet-width: 688px;
   desktop-width: 1360px;
@@ -166,7 +158,7 @@ body {
 .slider__next:hover {
   width: 40px;
   height: 40px;
-  border: 1px solid var(--white);
+  border: 1px solid $white;
   border-radius: 50%;
 }
 
@@ -178,11 +170,11 @@ body {
 .slider__next:active {
   width: 40px;
   height: 40px;
-  background-color: var(--white);
+  background-color: $white;
 }
 .slider__prev:active .slider__icon,
 .slider__next:active .slider__icon {
-  fill: var(--bluesh-grey);
+  fill: $bluesh-grey;
 }
 
 .slider--first {
@@ -200,7 +192,7 @@ body {
   font-size: 48px;
   font-weight: 400;
   line-height: 48px;
-  color: var(--white);
+  color: $white;
   margin-top: 0;
 }
 .slider__subtitile {
@@ -208,14 +200,14 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  color: var(--white);
+  color: $white;
 }
 
 .slider__counter {
   font-size: 20px;
   font-weight: 500;
   line-height: 32px;
-  color: var(--white);
+  color: $white;
 }
 .slider__counter .counter-last {
   color: rgba(255, 255, 255, 0.5);
@@ -285,7 +277,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  color: var(--bluesh-grey);
+  color: $bluesh-grey;
 }
 
 @media (min-width: 1360px) {
@@ -306,7 +298,7 @@ body {
   font-size: 32px;
   font-weight: 500;
   line-height: 32px;
-  color: var(--violet);
+  color: $violet;
 }
 
 .about__subtitle {
@@ -314,7 +306,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
-  color: var(--bluesh-grey);
+  color: $bluesh-grey;
 }
 
 @media (min-width: 688px) {
@@ -395,7 +387,7 @@ body {
 
 .list {
   padding-bottom: 8px;
-  border-bottom: 1px solid var(--light-grey);
+  border-bottom: 1px solid $light-grey;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -432,7 +424,7 @@ details[open] summary:after {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  color: var(--bluesh-grey);
+  color: $bluesh-grey;
 }
 
 .list__colour,
@@ -493,7 +485,7 @@ details[open] summary:after {
   left: -4px;
   width: 32px;
   height: 32px;
-  border: 1px solid var(--bluesh-grey);
+  border: 1px solid $bluesh-grey;
   border-radius: 50%;
   transition: 0.4s;
 }
@@ -505,7 +497,7 @@ details[open] summary:after {
   left: -4px;
   width: 32px;
   height: 32px;
-  border: 1px solid var(--violet);
+  border: 1px solid $violet;
   border-radius: 50%;
 }
 
@@ -516,17 +508,17 @@ details[open] summary:after {
 
 .colour--violet {
   content: "";
-  background-color: var(--violet);
+  background-color: $violet;
   border-radius: 50%;
 }
 .colour--grey {
   content: "";
-  background-color: var(--bluesh-grey);
+  background-color: $bluesh-grey;
   border-radius: 50%;
 }
 .colour--blue {
   content: "";
-  background-color: var(--blue);
+  background-color: $blue;
   border-radius: 50%;
 }
 
@@ -538,7 +530,7 @@ details[open] summary:after {
   left: 0;
   width: 33px;
   height: 33px;
-  border: 1px solid var(--bluesh-grey);
+  border: 1px solid $bluesh-grey;
   border-radius: 50%;
   transition: 0.4s;
 }
@@ -550,13 +542,13 @@ details[open] summary:after {
   left: 0;
   width: 33px;
   height: 33px;
-  border: 1px solid var(--violet);
+  border: 1px solid $violet;
   border-radius: 50%;
   transition: 0.4s;
 }
 .filter-input-radio--size:checked + .label__size {
   font-size: 20px;
-  color: var(--blue);
+  color: $blue;
   transition: 0.2s;
 }
 
@@ -573,8 +565,8 @@ details[open] summary:after {
 
 .size--checked {
   border-width: 35px;
-  border: 1px solid var(--violet);
-  color: var(--violet);
+  border: 1px solid $violet;
+  color: $violet;
 }
 @media (min-width: 688px) {
 }
@@ -584,7 +576,7 @@ details[open] summary:after {
   font-weight: 500;
   line-height: 32px;
   letter-spacing: 0px;
-  color: var(--violet);
+  color: $violet;
 }
 
 /*DETAIL*/
@@ -594,13 +586,13 @@ details[open] summary:after {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  color: var(--violet);
+  color: $violet;
 }
 .detail__character {
   font-family: "Rajdhani";
   font-size: 16px;
   font-weight: 500;
-  color: var(--bluesh-grey);
+  color: $bluesh-grey;
 }
 /*QUANTITY*/
 
@@ -615,7 +607,7 @@ details[open] summary:after {
   font-size: 24px;
   font-weight: 500;
   line-height: 24px;
-  color: var(--bluesh-grey);
+  color: $bluesh-grey;
 }
 
 .quantity__button {
@@ -633,7 +625,7 @@ details[open] summary:after {
 .quantity__button:hover {
   width: 28px;
   height: 28px;
-  border: 1px solid var(--light-grey);
+  border: 1px solid $light-grey;
   border-radius: 50%;
 }
 
@@ -647,12 +639,12 @@ details[open] summary:after {
   font-size: 40px;
   font-weight: 500;
   line-height: 40px;
-  color: var(--sandy);
+  color: $sandy;
 }
 .cost__sub {
   font-size: 30px;
   font-weight: 500;
-  color: var(--bluesh-grey);
+  color: $bluesh-grey;
 }
 
 /*COLLECTION*/
@@ -697,7 +689,7 @@ details[open] summary:after {
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  color: var(--white);
+  color: $white;
 }
 
 .collection__subtitle {
@@ -705,7 +697,7 @@ details[open] summary:after {
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
-  color: var(--white);
+  color: $white;
 }
 
 @media (min-width: 1360px) {
@@ -728,14 +720,14 @@ details[open] summary:after {
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;
-  color: var(--violet);
+  color: $violet;
 }
 
 .fieldset__legend {
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
-  color: var(--bluesh-grey);
+  color: $bluesh-grey;
 }
 
 .feedback__fieldset {
@@ -751,7 +743,7 @@ details[open] summary:after {
   font-weight: 500;
   line-height: 40px;
   background: rgba(225, 230, 237, 0.2);
-  color: var(--bluesh-grey);
+  color: $bluesh-grey;
   border-radius: 0.1;
   border: none;
   margin-top: 8px;
@@ -773,7 +765,7 @@ details[open] summary:after {
 
 .filter-input-checkbox:hover + label,
 .filter-input-checkbox:focus + label {
-  color: var(--violet);
+  color: $violet;
 }
 
 .filter-input-checkbox + label::before {
@@ -783,19 +775,19 @@ details[open] summary:after {
   top: -1px;
   width: 19px;
   height: 19px;
-  border: 1px solid var(--light-grey);
+  border: 1px solid $light-grey;
 }
 
 .filter-input-checkbox:checked + label::before {
-  background-color: var(--violet);
+  background-color: $violet;
 }
 
 .filter-input-checkbox:hover + label::before {
-  border: 1px solid var(--violet);
+  border: 1px solid $violet;
   transition: 0.4s;
 }
 .filter-input-checkbox:checked:hover + label::before {
-  border: 1px solid var(--violet);
+  border: 1px solid $violet;
 }
 
 .filter-input-checkbox + label:hover:after {
@@ -837,7 +829,7 @@ details[open] summary:after {
   top: -1px;
   width: 20px;
   height: 20px;
-  border: 1px solid var(--light-grey);
+  border: 1px solid $light-grey;
   border-radius: 50%;
 }
 .filter-input-radio:checked + label::after {
@@ -847,7 +839,7 @@ details[open] summary:after {
   left: -30px;
   width: 12px;
   height: 12px;
-  background-color: var(--violet);
+  background-color: $violet;
   border-radius: 50%;
 }
 
@@ -889,32 +881,32 @@ details[open] summary:after {
   font-weight: 500;
   line-height: 32px;
   text-align: center;
-  background-color: var(--violet);
-  color: var(--white);
+  background-color: $violet;
+  color: $white;
   width: 100%;
   border: none;
 }
 
 .main__button:hover {
-  background-color: var(--violet-hover);
+  background-color: $violet-hover;
   transition: 0.4s;
 }
 
 .main__button:active {
-  background-color: var(--violet-active);
+  background-color: $violet-active;
 }
 .button__size {
-  color: var(--sandy);
-  border: 1px solid var(--sandy);
+  color: $sandy;
+  border: 1px solid $sandy;
   border-radius: 24px;
-  background-color: var(--white);
+  background-color: $white;
   padding: 0 12px 0 12px;
 }
 .button__size:hover {
-  color: var(--white);
-  border: 1px solid var(--sandy);
+  color: $white;
+  border: 1px solid $sandy;
   border-radius: 24px;
-  background-color: var(--sandy);
+  background-color: $sandy;
   padding: 0 12px 0 12px;
   transition: 0.4s;
 }
