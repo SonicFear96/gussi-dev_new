@@ -18,49 +18,13 @@
     <main class="main">
       <div class="main-wrapper">
         <section class="wrapper-slider">
-          <div class="slider slider--first">
+          <div class="slider">
             <a class="slider__logo">
               <img src="./img/Logo.svg" alt="logo" />
             </a>
             <div class="slider__text">
               <h2 class="slider__title">Light coat</h2>
               <p class="slider__subtitile">More cotton, more freedom</p>
-              <div class="slider__nav">
-                <p class="slider__counter">
-                  <span class="counter-first">01 — </span
-                  ><span class="counter-last">03</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="slider slider--second">
-            <a class="slider__logo">
-              <img src="./img/Logo.svg" alt="logo" />
-            </a>
-            <div class="slider__text">
-              <h2 class="slider__title">Sandy longsleeve</h2>
-              <p class="slider__subtitile">More cotton, more freedom</p>
-              <div class="slider__nav">
-                <p class="slider__counter">
-                  <span class="counter-first">02 — </span
-                  ><span class="counter-last">03</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="slider slider--third">
-            <a class="slider__logo">
-              <img src="./img/Logo.svg" alt="logo" />
-            </a>
-            <div class="slider__text">
-              <h2 class="slider__title">Lime jacket</h2>
-              <p class="slider__subtitile">More cotton, more freedom</p>
-              <div class="slider__nav">
-                <p class="slider__counter">
-                  <span class="counter-first">03 — </span
-                  ><span class="counter-last">03</span>
-                </p>
-              </div>
             </div>
           </div>
           <div class="nav__button-wrapper">
@@ -93,6 +57,12 @@
               </svg>
             </button>
           </div>
+          <div class="slider__nav">
+            <p class="slider__counter">
+              <span class="counter-first">01</span>
+              —<span class="counter-last">03</span>
+            </p>
+          </div>
         </section>
         <section class="wrapper-content">
           <div class="content-about">
@@ -101,149 +71,153 @@
               <h3 class="about__title">Gussi light coat</h3>
               <p class="about__subtitle">
                 It takes you from the party to the after party with its
-                fashion-forward styles. A playfull blendof retro and modern
+                fashion-forward styles. A playfull blend of retro and modern
                 outdoor design.
               </p>
             </div>
           </div>
           <div class="select">
             <div class="filter__product">
-              <div class="wrapper__select select--colour">
-                <fieldset class="select__fieldset">
-                  <legend class="title__main">Colour</legend>
-                  <ul class="fieldset__list-colour">
-                    <li class="filter-option filter-radio--colour">
-                      <input
-                        class="visually-hidden filter-input-radio--colour filter-input"
-                        type="radio"
-                        name="colour-group"
-                        value="violet"
-                        id="filter-violet"
-                      />
-                      <label
-                        class="label__colour colour--violet"
-                        for="filter-violet"
-                      ></label>
-                    </li>
-                    <li class="filter-option filter-radio--colour">
-                      <input
-                        class="visually-hidden filter-input-radio--colour filter-input"
-                        type="radio"
-                        name="colour-group"
-                        value="grey"
-                        id="filter-grey"
-                        checked
-                      />
-                      <label
-                        class="label__colour colour--grey"
-                        for="filter-grey"
-                      ></label>
-                    </li>
-                    <li class="filter-option filter-radio--colour">
-                      <input
-                        class="visually-hidden filter-input-radio--colour filter-input"
-                        type="radio"
-                        name="colour-group"
-                        value="blue"
-                        id="filter-blue"
-                      />
-                      <label
-                        class="label__colour colour--blue"
-                        for="filter-blue"
-                      ></label>
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
-              <div class="wrapper__select select--size">
-                <fieldset class="select__fieldset">
-                  <legend class="title__main">Size</legend>
-                  <ul class="fieldset__list-size">
-                    <li class="filter-option filter-radio--size">
-                      <input
-                        class="visually-hidden filter-input-radio--size filter-input"
-                        type="radio"
-                        name="size-group"
-                        value="xs"
-                        id="filter-xs"
-                      />
-                      <label class="label__size" for="filter-xs">XS</label>
-                    </li>
-                    <li class="filter-option filter-radio--size">
-                      <input
-                        class="visually-hidden filter-input-radio--size filter-input"
-                        type="radio"
-                        name="size-group"
-                        value="s"
-                        id="filter-s"
-                        checked
-                      />
-                      <label class="label__size" for="filter-s">S</label>
-                    </li>
-                    <li class="filter-option filter-radio--size">
-                      <input
-                        class="visually-hidden filter-input-radio--size filter-input"
-                        type="radio"
-                        name="size-group"
-                        value="m"
-                        id="filter-m"
-                      />
-                      <label class="label__size" for="filter-m">M</label>
-                    </li>
-                    <li class="filter-option filter-radio--size">
-                      <input
-                        class="visually-hidden filter-input-radio--size filter-input"
-                        type="radio"
-                        name="size-group"
-                        value="l"
-                        id="filter-l"
-                      />
-                      <label class="label__size" for="filter-l">L</label>
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
-              <div class="button-wrapper">
-                <button class="button__size">Size guide</button>
-              </div>
-              <div class="quantity">
-                <h2 class="title__main">Quantity</h2>
-                <div class="quantity__wrapper">
-                  <button class="quantity__button quantity__left">
-                    <svg
-                      width="10"
-                      height="10"
-                      viewBox="0 0 10 2"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.56923 1.72998H0.430769C0.14359 1.72998 0 1.60035 0 1.34109V0.618869C0 0.35961 0.14359 0.22998 0.430769 0.22998H9.56923C9.85641 0.22998 10 0.35961 10 0.618869V1.34109C10 1.60035 9.85641 1.72998 9.56923 1.72998Z"
-                        fill="#192B3F"
-                      />
-                    </svg>
-                  </button>
-                  <p class="quantity__text">1</p>
-                  <button class="quantity__button quantity__right">
-                    <svg
-                      width="10"
-                      height="10"
-                      viewBox="0 0 10 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.82278 4.21717H9.62025C9.87342 4.21717 10 4.34343 10 4.59596V5.40404C10 5.63973 9.87342 5.75758 9.62025 5.75758H5.82278V9.59596C5.82278 9.86532 5.6962 10 5.44304 10H4.58228C4.32911 10 4.20253 9.86532 4.20253 9.59596V5.75758H0.379747C0.126582 5.75758 0 5.63973 0 5.40404V4.59596C0 4.34343 0.126582 4.21717 0.379747 4.21717H4.20253V0.404041C4.20253 0.13468 4.32911 0 4.58228 0H5.44304C5.6962 0 5.82278 0.13468 5.82278 0.404041V4.21717Z"
-                        fill="#192B3F"
-                      />
-                    </svg>
-                  </button>
+              <div class="filter-select__container">
+                <div class="wrapper__select select--colour">
+                  <fieldset class="select__fieldset">
+                    <legend class="title__main">Colour</legend>
+                    <ul class="fieldset__list-colour">
+                      <li class="filter-option filter-radio--colour">
+                        <input
+                          class="visually-hidden filter-input-radio--colour filter-input"
+                          type="radio"
+                          name="colour-group"
+                          value="violet"
+                          id="filter-violet"
+                        />
+                        <label
+                          class="label__colour colour--violet"
+                          for="filter-violet"
+                        ></label>
+                      </li>
+                      <li class="filter-option filter-radio--colour">
+                        <input
+                          class="visually-hidden filter-input-radio--colour filter-input"
+                          type="radio"
+                          name="colour-group"
+                          value="grey"
+                          id="filter-grey"
+                          checked
+                        />
+                        <label
+                          class="label__colour colour--grey"
+                          for="filter-grey"
+                        ></label>
+                      </li>
+                      <li class="filter-option filter-radio--colour">
+                        <input
+                          class="visually-hidden filter-input-radio--colour filter-input"
+                          type="radio"
+                          name="colour-group"
+                          value="blue"
+                          id="filter-blue"
+                        />
+                        <label
+                          class="label__colour colour--blue"
+                          for="filter-blue"
+                        ></label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+                <div class="wrapper__select select--size">
+                  <fieldset class="select__fieldset">
+                    <legend class="title__main">Size</legend>
+                    <ul class="fieldset__list-size">
+                      <li class="filter-option filter-radio--size">
+                        <input
+                          class="visually-hidden filter-input-radio--size filter-input"
+                          type="radio"
+                          name="size-group"
+                          value="xs"
+                          id="filter-xs"
+                        />
+                        <label class="label__size" for="filter-xs">XS</label>
+                      </li>
+                      <li class="filter-option filter-radio--size">
+                        <input
+                          class="visually-hidden filter-input-radio--size filter-input"
+                          type="radio"
+                          name="size-group"
+                          value="s"
+                          id="filter-s"
+                          checked
+                        />
+                        <label class="label__size" for="filter-s">S</label>
+                      </li>
+                      <li class="filter-option filter-radio--size">
+                        <input
+                          class="visually-hidden filter-input-radio--size filter-input"
+                          type="radio"
+                          name="size-group"
+                          value="m"
+                          id="filter-m"
+                        />
+                        <label class="label__size" for="filter-m">M</label>
+                      </li>
+                      <li class="filter-option filter-radio--size">
+                        <input
+                          class="visually-hidden filter-input-radio--size filter-input"
+                          type="radio"
+                          name="size-group"
+                          value="l"
+                          id="filter-l"
+                        />
+                        <label class="label__size" for="filter-l">L</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+                <div class="button-wrapper--size">
+                  <button class="button__size">Size guide</button>
                 </div>
               </div>
-              <div class="cost">
-                <h2 class="title__main">Cost</h2>
-                <span class="cost__main">$120</span
-                ><span class="cost__sub">.00</span>
+              <div class="filter-price__container">
+                <div class="quantity">
+                  <h2 class="title__main">Quantity</h2>
+                  <div class="quantity__wrapper">
+                    <button class="quantity__button quantity__left">
+                      <svg
+                        width="10"
+                        height="10"
+                        viewBox="0 0 10 2"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.56923 1.72998H0.430769C0.14359 1.72998 0 1.60035 0 1.34109V0.618869C0 0.35961 0.14359 0.22998 0.430769 0.22998H9.56923C9.85641 0.22998 10 0.35961 10 0.618869V1.34109C10 1.60035 9.85641 1.72998 9.56923 1.72998Z"
+                          fill="#192B3F"
+                        />
+                      </svg>
+                    </button>
+                    <p class="quantity__text">1</p>
+                    <button class="quantity__button quantity__right">
+                      <svg
+                        width="10"
+                        height="10"
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.82278 4.21717H9.62025C9.87342 4.21717 10 4.34343 10 4.59596V5.40404C10 5.63973 9.87342 5.75758 9.62025 5.75758H5.82278V9.59596C5.82278 9.86532 5.6962 10 5.44304 10H4.58228C4.32911 10 4.20253 9.86532 4.20253 9.59596V5.75758H0.379747C0.126582 5.75758 0 5.63973 0 5.40404V4.59596C0 4.34343 0.126582 4.21717 0.379747 4.21717H4.20253V0.404041C4.20253 0.13468 4.32911 0 4.58228 0H5.44304C5.6962 0 5.82278 0.13468 5.82278 0.404041V4.21717Z"
+                          fill="#192B3F"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="cost">
+                  <h2 class="title__main">Cost</h2>
+                  <span class="cost__main">$120</span
+                  ><span class="cost__sub">.00</span>
+                </div>
               </div>
             </div>
           </div>

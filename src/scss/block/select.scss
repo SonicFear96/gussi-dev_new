@@ -1,48 +1,7 @@
 .select {
-  border-top: 1px solid #e1e6ed;
-  border-bottom: 1px solid #e1e6ed;
+  margin-top: 27px;
 }
 
-.filter__product {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.select--size {
-  margin-top: 24px;
-}
-
-@media (min-width: 688px) {
-  .filter__product {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-      "colour size size-guide"
-      "quantity cost ";
-  }
-  .select--colour {
-    grid-area: "colour";
-  }
-  .select--size {
-    margin-top: 0;
-    grid-area: "size";
-  }
-  .button-wrapper {
-    margin-top: 0;
-    grid-area: "size-guide";
-  }
-  .quantity {
-    grid-area: "quantity";
-  }
-  .cost {
-    grid-area: "cost";
-  }
-}
-@media (min-width: 1360px) {
-  .first--title {
-    margin-top: 56px;
-  }
-}
 /*PRODUCT CHECKED*/
 
 .list {
@@ -106,12 +65,31 @@ details[open] summary:after {
   align-items: center;
 }
 
-/* .filter-option label {
-      position: relative;
-      display: block;
-      cursor: pointer;
-      user-select: none;
-    } */
+.filter-select__container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.filter-price__container {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+}
+
+@media (min-width: $tablet) {
+  .filter-select__container {
+    display: flex;
+    flex-direction: row;
+    gap: 54px;
+  }
+}
+@media (min-width: $desktop) {
+  .filter-price__container {
+    margin-top: 37px;
+    gap: 78px;
+  }
+}
 
 .select__fieldset {
   border: none;
@@ -129,14 +107,10 @@ details[open] summary:after {
 .fieldset__list-colour {
   margin-left: 5px;
   margin-top: 5px;
+  gap: 12px;
 }
 
 /*FILTER COLOUR */
-
-.filter-radio--colour {
-  padding-left: 0;
-  padding-right: 10px;
-}
 
 .filter-input-radio--colour + label:hover:after {
   content: "";
@@ -153,8 +127,8 @@ details[open] summary:after {
 .filter-input-radio--colour:checked + label::after {
   content: "";
   position: absolute;
-  top: -4px;
-  left: -4px;
+  top: -3px;
+  left: -3px;
   width: 32px;
   height: 32px;
   border: 1px solid $violet;
@@ -180,6 +154,19 @@ details[open] summary:after {
   content: "";
   background-color: $blue;
   border-radius: 50%;
+}
+
+@media (max-width: calc($desktop - 1px)) {
+  .label__colour {
+    width: 40px;
+    height: 40px;
+  }
+  .filter-input-radio--colour:checked + label::after {
+    top: -4px;
+    left: -4px;
+    width: 48px;
+    height: 48px;
+  }
 }
 
 /*FILTER SIZE*/
@@ -228,7 +215,23 @@ details[open] summary:after {
   border: 1px solid $violet;
   color: $violet;
 }
-@media (min-width: 688px) {
+@media (max-width: calc($desktop - 1px)) {
+  .fieldset__list-size {
+    gap: 17px;
+  }
+  .filter-input-radio--size:checked + label::after {
+    width: 48px;
+    height: 48px;
+    top: -8px;
+    left: -6px;
+  }
+  .filter-input-radio--size:checked.label__size {
+    font-size: 28px;
+  }
+
+  .label__size {
+    font-size: 20px;
+  }
 }
 /*LIST*/
 .list {

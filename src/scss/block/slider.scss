@@ -15,41 +15,27 @@
   min-width: 320px;
   width: 100%;
   background-size: cover;
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 3s;
-  animation-name: fade;
-  animation-duration: 3s;
+  transition: all 0.5s ease-in-out;
 }
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.8;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fade {
-  from {
-    opacity: 0.8;
-  }
-  to {
-    opacity: 1;
-  }
+.slider {
+  background-image: url(../img/gussi_slider_desktop_1.png);
 }
 
 .slider__nav {
-  margin-left: 200px;
+  position: absolute;
+  bottom: 31px;
+  left: 212px;
 }
 .nav__button-wrapper {
-  bottom: 15px;
+  bottom: 28px;
   position: absolute;
   display: flex;
   justify-content: space-between;
-  margin-left: 26px;
-  width: 120px;
+  left: 45px;
+  width: 93px;
 }
 
-@media (min-width: 1360px) {
+@media (min-width: $desktop) {
   .nav__button-wrapper {
     position: fixed;
   }
@@ -57,8 +43,8 @@
 
 .slider__text {
   position: absolute;
-  bottom: 0;
-  left: 16px;
+  bottom: 95px;
+  left: 52px;
 }
 
 .slider {
@@ -74,8 +60,6 @@
   background: none;
   border: none;
   padding: 8px 5px 5px 5px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .slider__prev:hover,
@@ -99,16 +83,6 @@
 .slider__prev:active .slider__icon,
 .slider__next:active .slider__icon {
   fill: $bluesh-grey;
-}
-
-.slider--first {
-  background-image: url(../img/gussi_slider_mobile.png);
-}
-.slider--second {
-  background-image: url(../img/gussi_slider_desktop_2.png);
-}
-.slider--third {
-  background-image: url(../img/gussi_slider_desktop_3.png);
 }
 
 .slider__title {
@@ -137,7 +111,7 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-@media (min-width: 688px) {
+@media (min-width: $tablet) {
   .slider__title {
     font-size: 64px;
     line-height: 64px;
@@ -146,19 +120,9 @@
     font-size: 24px;
     line-height: 32px;
   }
-
-  .slider--first {
-    background-image: url(../img/gussi_slider_tablet.png);
-  }
-  .slider--second {
-    background-image: url(../img/gussi_slider_desktop_2.png);
-  }
-  .slider--third {
-    background-image: url(../img/gussi_slider_desktop_3.png);
-  }
 }
 
-@media (min-width: 1360px) {
+@media (min-width: $desktop) {
   .slider {
     height: 100%;
   }
@@ -177,15 +141,5 @@
   }
   .slider__subtitile {
     font-size: 28px;
-  }
-
-  .slider--first {
-    background-image: url(../img/gussi_slider_desktop_1.png);
-  }
-  .slider--second {
-    background-image: url(../img/gussi_slider_desktop_2.png);
-  }
-  .slider--third {
-    background-image: url(../img/gussi_slider_desktop_3.png);
   }
 }

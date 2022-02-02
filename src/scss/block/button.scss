@@ -23,6 +23,8 @@
   color: $sandy;
   border: 1px solid $sandy;
   border-radius: 24px;
+  width: 92px;
+  height: 28px;
   background-color: $white;
   padding: 0 12px 0 12px;
 }
@@ -36,14 +38,11 @@
 }
 
 .button-wrapper {
-  margin-top: 24px;
-  margin-bottom: 16px;
   width: 100%;
 }
 
 @media (min-width: 688px) {
   .button-wrapper {
-    margin-top: 30px;
     width: 100%;
   }
 }
