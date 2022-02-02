@@ -1,0 +1,65 @@
+.detail__text {
+  font-family: "Rajdhani";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: $violet;
+}
+.detail__character {
+  font-family: "Rajdhani";
+  font-size: 16px;
+  font-weight: 500;
+  color: $bluesh-grey;
+}
+/*QUANTITY*/
+
+.quantity__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.quantity__text {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  color: $bluesh-grey;
+}
+
+.quantity__button {
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border: none;
+}
+.quantity__left {
+  margin-right: 10px;
+}
+.quantity__right {
+  margin-left: 10px;
+}
+.quantity__button:hover {
+  width: 28px;
+  height: 28px;
+  border: 1px solid $light-grey;
+  border-radius: 50%;
+}
+
+@media (min-width: 688px) {
+  .quantity__wrapper {
+    margin-top: 20px;
+  }
+}
+/*COST*/
+.cost__main {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px;
+  color: $sandy;
+}
+.cost__sub {
+  font-size: 30px;
+  font-weight: 500;
+  color: $bluesh-grey;
+}

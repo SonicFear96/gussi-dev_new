@@ -1,0 +1,24 @@
+.wrapper-content {
+  padding: 0 16px 0 16px;
+}
+
+.title__main {
+  font-family: "Rajdhani";
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $bluesh-grey;
+}
+
+@media (min-width: $desktop) {
+  .wrapper-content {
+    width: 90%;
+    padding: 0 16px 0 12px;
+  }
+}
+@media (max-width: $mobile-width-only) {
+  .content-about {
+    margin-top: 9px;
+  }
+}

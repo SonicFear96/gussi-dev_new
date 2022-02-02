@@ -1,0 +1,63 @@
+.wrapper__collection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.collection__list {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  border-radius: 5px;
+}
+
+.collection__list-wrapper {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+}
+
+.collection__list--first {
+  background: linear-gradient(rgba(255, 255, 255, 0.22), rgba(53, 41, 37, 0.22)),
+    url(../img/gussi_similar_collection_mobile_1.png) no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+.collection__list--second {
+  margin-top: 8px;
+  background: linear-gradient(rgba(255, 255, 255, 0.22), rgba(53, 41, 37, 0.22)),
+    url(../img/gussi_similar_collection_mobile_2.png) no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+.collection__title {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $white;
+}
+
+.collection__subtitle {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $white;
+}
+
+@media (min-width: 1360px) {
+  .wrapper__collection {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .collection__list--second {
+    margin-top: 0;
+  }
+  .collection__list {
+    width: 48%;
+  }
+}

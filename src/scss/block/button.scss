@@ -1,0 +1,61 @@
+.main__button {
+  font-size: 24px;
+  font-family: "Rajdhani";
+  padding: 12px 0 12px 0;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  background-color: $violet;
+  color: $white;
+  width: 100%;
+  border: none;
+}
+
+.main__button:hover {
+  background-color: $violet-hover;
+  transition: 0.4s;
+}
+
+.main__button:active {
+  background-color: $violet-active;
+}
+.button__size {
+  color: $sandy;
+  border: 1px solid $sandy;
+  border-radius: 24px;
+  background-color: $white;
+  padding: 0 12px 0 12px;
+}
+.button__size:hover {
+  color: $white;
+  border: 1px solid $sandy;
+  border-radius: 24px;
+  background-color: $sandy;
+  padding: 0 12px 0 12px;
+  transition: 0.4s;
+}
+
+.button-wrapper {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+@media (min-width: 688px) {
+  .button-wrapper {
+    margin-top: 30px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 688px) and (max-width: 1360px) {
+  .collection__title {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+  .collection__subtitle {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
