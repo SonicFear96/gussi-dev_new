@@ -128,6 +128,20 @@ summary:after {
   content: "+";
   right: 0;
 }
+details[open] summary ~ * {
+  animation: sweep 1s ease-in-out;
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-left: 100px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
 
 details[open] summary:after {
   content: "-";
@@ -138,6 +152,7 @@ details[open] summary:after {
 }
 
 .list__text {
+  margin-top: 14px;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
