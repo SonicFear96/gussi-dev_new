@@ -121,6 +121,18 @@
 }
 
 @media (min-width: $tablet) {
+  .slider__text {
+    bottom: 83px;
+    left: 16px;
+  }
+  .nav__button-wrapper {
+    bottom: 23px;
+    left: 10px;
+  }
+  .slider__nav {
+    bottom: 26px;
+    left: 176px;
+  }
   .slider__title {
     font-size: 64px;
     line-height: 64px;

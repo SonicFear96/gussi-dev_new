@@ -45,9 +45,23 @@
   .button-wrapper {
     margin-top: 40px;
   }
+  .button-wrapper--feedback {
+    margin-top: 20px;
+  }
+}
+@media (min-width: $tablet) {
+  .button-wrapper {
+    margin-top: 39px;
+  }
+  .button-wrapper--feedback {
+    margin-top: 19px;
+  }
 }
 
 @media (min-width: $tablet) and (max-width: $desktop) {
+  .button__size {
+    margin-top: 32px;
+  }
   .collection__title {
     font-size: 40px;
     font-weight: 400;

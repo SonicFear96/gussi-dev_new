@@ -23,6 +23,15 @@
     padding-right: 30px;
   }
 }
+@media (min-width: $mobile-width-only) and (max-width: calc($desktop - 1px)) {
+  .about {
+    margin-top: 15px;
+  }
+  .about__subtitle {
+    margin-top: 13px;
+    padding-right: 67px;
+  }
+}
 
 @media (min-width: $tablet) {
   .about__title {

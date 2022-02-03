@@ -18,7 +18,7 @@
     padding: 0 16px 0 12px;
   }
 }
-@media (max-width: $mobile-width-only) {
+@media (max-width: calc($desktop - 1px)) {
   .content-about {
     margin-top: 9px;
   }
