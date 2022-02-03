@@ -90,6 +90,7 @@
 @media (max-width: $mobile-width-only) {
   .fieldset__list-colour {
     margin: 13px 0 0 5px;
+    gap: 11px;
   }
   .select--size {
     margin-top: 3px;
@@ -131,7 +132,7 @@
 
 @media (max-width: calc($desktop - 1px)) {
   .label__size {
-    padding-top: 30px;
+    padding-top: 30%;
   }
   .filter-input-radio--colour + label:hover:after {
     content: "";
