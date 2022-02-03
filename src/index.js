@@ -42,3 +42,34 @@ const DecrementQuantity = () => {
 
 RightQuantity.addEventListener("click", IncrementQuantity);
 LeftQuantity.addEventListener("click", DecrementQuantity);
+
+/*Slider */
+
+const Slider = document.querySelector(".slider");
+const ButtonSliderNext = document.querySelector(".slider__next");
+const ButtonSliderPrev = document.querySelector(".slider__prev");
+const CounterFirst = document.querySelector(".counter-first");
+const CounterLast = document.querySelector(".counter-last");
+
+let i = 1;
+
+const NextSlider = () => {
+  if (i === 3) {
+    ButtonSliderNext.disabled = true;
+  } else i++;
+  ButtonSliderNext.disabled = false;
+  CounterFirst.textContent = `0${i}`;
+  Slider.style.backgroundImage = `url('./img/gussi_slider_${i}.png')`;
+};
+
+const PrevSlider = () => {
+  if (i === 1) {
+    ButtonSliderPrev.disabled = true;
+  } else i--;
+  ButtonSliderPrev.disabled = false;
+  CounterFirst.textContent = `0${i}`;
+  Slider.style.backgroundImage = `url('./img/gussi_slider_${i}.png')`;
+};
+
+ButtonSliderNext.addEventListener("click", NextSlider);
+ButtonSliderPrev.addEventListener("click", PrevSlider);
