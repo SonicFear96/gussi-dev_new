@@ -144,6 +144,8 @@
 
 .field__label--checkbox {
   margin-left: 28px;
+  user-select: text;
+  cursor: auto;
 }
 
 @media (max-width: $mobile-width-only) {

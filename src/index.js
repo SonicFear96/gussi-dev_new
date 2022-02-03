@@ -1,6 +1,7 @@
 const LeftQuantity = document.querySelector(".quantity__left");
 const RightQuantity = document.querySelector(".quantity__right");
 const Quantity = document.querySelector(".quantity__text");
+const Cost = document.querySelector(".cost__main");
 const Slider = document.querySelector(".slider");
 const ButtonSliderNext = document.querySelector(".slider__next");
 const ButtonSliderPrev = document.querySelector(".slider__prev");
@@ -12,11 +13,13 @@ const SliderTitle = document.querySelector(".slider__title");
 
 const IncrementQuantity = () => {
   Quantity.textContent++;
+  Cost.textContent = `$${120 * Quantity.textContent}`;
 };
 const DecrementQuantity = () => {
   if (Quantity.textContent <= 0) {
     return 0;
   } else Quantity.textContent--;
+  Cost.textContent = `$${120 * Quantity.textContent}`;
 };
 
 RightQuantity.addEventListener("click", IncrementQuantity);
