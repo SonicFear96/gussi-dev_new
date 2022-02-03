@@ -115,10 +115,6 @@ details[open] summary:after {
 .filter-input-radio--colour + label:hover:after {
   content: "";
   position: absolute;
-  top: -4px;
-  left: -4px;
-  width: 32px;
-  height: 32px;
   border: 1px solid $bluesh-grey;
   border-radius: 50%;
   transition: 0.4s;
@@ -127,17 +123,8 @@ details[open] summary:after {
 .filter-input-radio--colour:checked + label::after {
   content: "";
   position: absolute;
-  top: -3px;
-  left: -3px;
-  width: 32px;
-  height: 32px;
   border: 1px solid $violet;
   border-radius: 50%;
-}
-
-.label__colour {
-  width: 26px;
-  height: 26px;
 }
 
 .colour--violet {
@@ -157,6 +144,13 @@ details[open] summary:after {
 }
 
 @media (max-width: calc($desktop - 1px)) {
+  .filter-input-radio--colour + label:hover:after {
+    content: "";
+    top: -4px;
+    left: -4px;
+    width: 48px;
+    height: 48px;
+  }
   .label__colour {
     width: 40px;
     height: 40px;
@@ -168,15 +162,33 @@ details[open] summary:after {
     height: 48px;
   }
 }
+@media (min-width: $desktop) {
+  .filter-input-radio--colour + label:hover:after {
+    content: "";
+    top: -3px;
+    left: -3px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .filter-input-radio--colour:checked + label::after {
+    content: "";
+    top: -3px;
+    left: -3px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .label__colour {
+    width: 26px;
+    height: 26px;
+  }
+}
 
 /*FILTER SIZE*/
 .filter-input-radio--size + label:hover:after {
   content: "";
   position: absolute;
-  top: -2px;
-  left: 0;
-  width: 33px;
-  height: 33px;
   border: 1px solid $bluesh-grey;
   border-radius: 50%;
   transition: 0.4s;
@@ -185,39 +197,31 @@ details[open] summary:after {
 .filter-input-radio--size:checked + label::after {
   content: "";
   position: absolute;
-  top: -2px;
-  left: 0;
-  width: 33px;
-  height: 33px;
   border: 1px solid $violet;
   border-radius: 50%;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 .filter-input-radio--size:checked + .label__size {
-  font-size: 20px;
-  color: $blue;
-  transition: 0.2s;
+  color: $violet;
+  transition: 0.5s;
 }
 
 .label__size {
-  width: 35px;
-  height: 35px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 32px;
   text-align: center;
   color: grey;
   border-radius: 50%;
 }
 
-.size--checked {
-  border-width: 35px;
-  border: 1px solid $violet;
-  color: $violet;
-}
 @media (max-width: calc($desktop - 1px)) {
   .fieldset__list-size {
     gap: 17px;
+  }
+
+  .filter-input-radio--size + label:hover:after {
+    top: -2px;
+    left: 0;
+    width: 48px;
+    height: 48px;
   }
   .filter-input-radio--size:checked + label::after {
     width: 48px;
@@ -225,14 +229,38 @@ details[open] summary:after {
     top: -8px;
     left: -6px;
   }
-  .filter-input-radio--size:checked.label__size {
+  .filter-input-radio--size:checked + .label__size {
     font-size: 28px;
   }
 
   .label__size {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .filter-input-radio--size + label:hover:after {
+    content: "";
+    top: -2px;
+    left: 0;
+    width: 32px;
+    height: 32px;
+  }
+  .label__size {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+  .filter-input-radio--size:checked + .label__size {
     font-size: 20px;
   }
 }
+
 /*LIST*/
 .list {
   font-size: 24px;
