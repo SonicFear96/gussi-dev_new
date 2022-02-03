@@ -33,10 +33,9 @@ let i = 1;
 
 const NextSlider = () => {
   if (i === 3) {
-    ButtonSliderNext.disabled = true;
+    i = 1;
   } else i++;
   SliderTitle.textContent = arrSliderTitle[i - 1];
-  ButtonSliderNext.disabled = false;
   CounterFirst.textContent = `0${i}`;
 
   Slider.style.backgroundImage = `url('./img/gussi_slider_${i}.png')`;
@@ -44,7 +43,7 @@ const NextSlider = () => {
 
 const PrevSlider = () => {
   if (i === 1) {
-    ButtonSliderPrev.disabled = true;
+    i = 3;
   } else i--;
   SliderTitle.textContent = arrSliderTitle[i - 1];
   ButtonSliderPrev.disabled = false;
@@ -54,3 +53,9 @@ const PrevSlider = () => {
 
 ButtonSliderNext.addEventListener("click", NextSlider);
 ButtonSliderPrev.addEventListener("click", PrevSlider);
+
+setInterval(() => {
+  if (screen.width >= 1024) {
+    NextSlider();
+  }
+}, 3000);
