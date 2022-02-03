@@ -1,3 +1,7 @@
+.content-about {
+  border-bottom: 1px solid $light-grey;
+}
+
 .about__title {
   font-family: "Rajdhani";
   font-size: 32px;
@@ -20,6 +24,7 @@
   }
   .about__subtitle {
     margin-top: 13px;
+    margin-bottom: 17px;
     padding-right: 30px;
   }
 }
@@ -40,7 +45,7 @@
     letter-spacing: 0px;
   }
   .about__subtitle {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     font-size: 20px;
     line-height: 32px;
   }

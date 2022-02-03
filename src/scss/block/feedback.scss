@@ -160,11 +160,14 @@
 
 @media (min-width: $tablet) {
   .feedback {
-    margin-top: 46px;
+    margin-top: 49px;
   }
   .feedback__title {
     font-size: 32px;
     line-height: 40px;
+  }
+  .feedback_form {
+    margin-top: -3px;
   }
   .feedback__fieldset .fieldset__legend {
     font-size: 20px;

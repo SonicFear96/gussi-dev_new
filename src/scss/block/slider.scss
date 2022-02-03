@@ -104,6 +104,20 @@
 .slider__counter .counter-last {
   color: rgba(255, 255, 255, 0.5);
 }
+.counter-last::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -24px;
+  top: 11px;
+  width: 16px;
+  height: 1px;
+  background-color: $white;
+}
+.counter-last {
+  position: relative;
+  margin-left: 27px;
+}
 
 @media (max-width: $mobile-width-only) {
   .slider__text {
