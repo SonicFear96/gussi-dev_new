@@ -189,3 +189,18 @@
     justify-content: start;
   }
 }
+
+@media (min-width: $desktop) {
+  .feedback {
+    margin-top: 62px;
+  }
+  .fieldset-gender {
+    margin-top: 12px;
+  }
+  .gender__list {
+    margin-top: -27px;
+  }
+  .fieldset__content--subscribe {
+    margin-top: 40px;
+  }
+}

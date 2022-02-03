@@ -156,3 +156,16 @@ details[open] summary:after {
     margin-top: 40px;
   }
 }
+@media (min-width: $desktop) {
+  .details {
+    margin-top: 44px;
+  }
+  .detail__text {
+    margin-top: 7px;
+    padding-right: 0px;
+    width: 600px;
+  }
+  .wrapper__list {
+    margin-top: 32px;
+  }
+}

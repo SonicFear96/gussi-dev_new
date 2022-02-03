@@ -144,8 +144,14 @@
 }
 
 @media (min-width: $desktop) {
+  .slider__text {
+    bottom: 96px;
+    left: 52px;
+  }
   .nav__button-wrapper {
     position: fixed;
+    bottom: 27px;
+    left: 45px;
   }
   .slider {
     height: 100%;
@@ -165,5 +171,9 @@
   }
   .slider__subtitile {
     font-size: 28px;
+  }
+  .slider__nav {
+    bottom: 31px;
+    left: 211px;
   }
 }

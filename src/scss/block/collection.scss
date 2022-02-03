@@ -26,7 +26,6 @@
 }
 
 .collection__list--second {
-  margin-top: 8px;
   background: linear-gradient(rgba(255, 255, 255, 0.22), rgba(53, 41, 37, 0.22)),
     url(../img/gussi_similar_collection_mobile_2.png) no-repeat;
   background-size: cover;
@@ -87,10 +86,21 @@
     flex-direction: row;
     justify-content: space-around;
   }
-  .collection__list--second {
-    margin-top: 0;
-  }
+
   .collection__list {
+    height: 160px;
     width: 48%;
+  }
+  .collection__list-wrapper {
+    bottom: 12px;
+    left: 16px;
+  }
+  .collection__title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .collection__subtitle {
+    font-size: 14px;
+    line-height: 16px;
   }
 }
