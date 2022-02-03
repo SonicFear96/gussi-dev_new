@@ -2,7 +2,20 @@
   margin-top: 27px;
 }
 
+@media (max-width: $mobile-width-only) {
+  .select {
+    margin-top: 34px;
+  }
+}
+
 /*PRODUCT CHECKED*/
+.filter-option label,
+.fieldset__content--subscribe {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
 
 .list {
   padding-bottom: 8px;
@@ -59,24 +72,6 @@ details[open] summary:after {
   flex-direction: row;
 }
 
-.list__size {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.filter-select__container {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-.filter-price__container {
-  margin-top: 35px;
-  display: flex;
-  flex-direction: row;
-  gap: 90px;
-}
-
 @media (min-width: $tablet) {
   .filter-select__container {
     display: flex;
@@ -108,6 +103,15 @@ details[open] summary:after {
   margin-left: 5px;
   margin-top: 5px;
   gap: 12px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .fieldset__list-colour {
+    margin: 13px 0 0 5px;
+  }
+  .select--size {
+    margin-top: 3px;
+  }
 }
 
 /*FILTER COLOUR */
@@ -208,17 +212,21 @@ details[open] summary:after {
 
 .label__size {
   text-align: center;
+  padding-top: 30%;
   color: grey;
   border-radius: 50%;
 }
 
-@media (max-width: calc($desktop - 1px)) {
+@media (max-width: $mobile-width-only) {
   .fieldset__list-size {
-    gap: 17px;
+    margin: -2px 0px 0 -13px;
+    gap: 4px;
   }
+}
 
+@media (max-width: calc($desktop - 1px)) {
   .filter-input-radio--size + label:hover:after {
-    top: -2px;
+    top: 0;
     left: 0;
     width: 48px;
     height: 48px;
@@ -226,8 +234,8 @@ details[open] summary:after {
   .filter-input-radio--size:checked + label::after {
     width: 48px;
     height: 48px;
-    top: -8px;
-    left: -6px;
+    top: 0;
+    left: 0;
   }
   .filter-input-radio--size:checked + .label__size {
     font-size: 28px;

@@ -35,12 +35,6 @@
   width: 93px;
 }
 
-@media (min-width: $desktop) {
-  .nav__button-wrapper {
-    position: fixed;
-  }
-}
-
 .slider__text {
   position: absolute;
   bottom: 95px;
@@ -111,6 +105,21 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
+@media (max-width: $mobile-width-only) {
+  .slider__text {
+    bottom: 90px;
+    left: 16px;
+  }
+  .nav__button-wrapper {
+    bottom: 23px;
+    left: 10px;
+  }
+  .slider__nav {
+    bottom: 26px;
+    left: 176px;
+  }
+}
+
 @media (min-width: $tablet) {
   .slider__title {
     font-size: 64px;
@@ -123,6 +132,9 @@
 }
 
 @media (min-width: $desktop) {
+  .nav__button-wrapper {
+    position: fixed;
+  }
   .slider {
     height: 100%;
   }

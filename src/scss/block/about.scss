@@ -14,7 +14,17 @@
   color: $bluesh-grey;
 }
 
-@media (min-width: 688px) {
+@media (max-width: $mobile-width-only) {
+  .about {
+    margin-top: 15px;
+  }
+  .about__subtitle {
+    margin-top: 13px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $tablet) {
   .about__title {
     font-size: 48px;
     line-height: 56px;
@@ -27,7 +37,7 @@
   }
 }
 
-@media (min-width: 1360px) {
+@media (min-width: $desktop) {
   .about__title {
     margin: 0;
     margin-top: 25px;

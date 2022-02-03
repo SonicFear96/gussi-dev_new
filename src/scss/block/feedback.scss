@@ -38,14 +38,6 @@
   list-style: none;
 }
 
-.filter-option label,
-.fieldset__content--subscribe {
-  position: relative;
-  display: block;
-  cursor: pointer;
-  user-select: none;
-}
-
 .filter-input-checkbox:hover + label,
 .filter-input-checkbox:focus + label {
   color: $violet;
