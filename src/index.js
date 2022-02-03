@@ -24,3 +24,21 @@
 
 //   slider[slideIndex - 1].style.display = "block";
 // }
+
+/*Quantity */
+
+const LeftQuantity = document.querySelector(".quantity__left");
+const RightQuantity = document.querySelector(".quantity__right");
+const Quantity = document.querySelector(".quantity__text");
+
+const IncrementQuantity = () => {
+  Quantity.textContent++;
+};
+const DecrementQuantity = () => {
+  if (Quantity.textContent <= 0) {
+    return 0;
+  } else Quantity.textContent--;
+};
+
+RightQuantity.addEventListener("click", IncrementQuantity);
+LeftQuantity.addEventListener("click", DecrementQuantity);
