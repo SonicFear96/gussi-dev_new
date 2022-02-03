@@ -53,25 +53,18 @@ const PrevSlider = () => {
 
 ButtonSliderNext.addEventListener("click", NextSlider);
 ButtonSliderPrev.addEventListener("click", PrevSlider);
-ButtonSliderNext.addEventListener("mouseout", start);
-ButtonSliderPrev.addEventListener("mouseout", start);
 ButtonSliderNext.addEventListener("mouseover", stop);
 ButtonSliderPrev.addEventListener("mouseover", stop);
 
-let timer = setInterval(function () {
+const timer = setInterval(function () {
   if (screen.width >= 1024) {
     NextSlider();
   }
-}, 1000);
+}, 3000);
 
 function stop() {
   if (timer) {
     clearInterval(timer);
     timer = null;
-  }
-}
-function start() {
-  if (timer) {
-    return true;
   }
 }
