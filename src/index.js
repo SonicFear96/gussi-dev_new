@@ -1,8 +1,14 @@
-/*Quantity */
-
 const LeftQuantity = document.querySelector(".quantity__left");
 const RightQuantity = document.querySelector(".quantity__right");
 const Quantity = document.querySelector(".quantity__text");
+const Slider = document.querySelector(".slider");
+const ButtonSliderNext = document.querySelector(".slider__next");
+const ButtonSliderPrev = document.querySelector(".slider__prev");
+const CounterFirst = document.querySelector(".counter-first");
+const CounterLast = document.querySelector(".counter-last");
+const SliderTitle = document.querySelector(".slider__title");
+
+/*Quantity */
 
 const IncrementQuantity = () => {
   Quantity.textContent++;
@@ -17,13 +23,6 @@ RightQuantity.addEventListener("click", IncrementQuantity);
 LeftQuantity.addEventListener("click", DecrementQuantity);
 
 /*Slider */
-
-const Slider = document.querySelector(".slider");
-const ButtonSliderNext = document.querySelector(".slider__next");
-const ButtonSliderPrev = document.querySelector(".slider__prev");
-const CounterFirst = document.querySelector(".counter-first");
-const CounterLast = document.querySelector(".counter-last");
-const SliderTitle = document.querySelector(".slider__title");
 
 const arrSliderTitle = ["Light coat", "Sandy longsleeve", "Lime jacket"];
 
