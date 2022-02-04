@@ -60,7 +60,7 @@ const timer = setInterval(function () {
   if (screen.width >= 1024) {
     NextSlider();
   }
-}, 3000);
+}, 8000);
 
 function stop() {
   if (timer) {
