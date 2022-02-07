@@ -113,11 +113,10 @@
 /*FILTER COLOUR */
 
 .filter-input-radio--colour + label:hover:after {
-  content: "";
   position: absolute;
   border: 1px solid $bluesh-grey;
   border-radius: 50%;
-  transition: 1s;
+  transition: all 0.4s;
 }
 
 .filter-input-radio--colour:checked + label::after {
@@ -144,6 +143,18 @@
 }
 
 @media (max-width: calc($desktop - 1px)) {
+  .filter-input-radio--colour + label::after {
+    content: "";
+    position: absolute;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    top: -4px;
+    left: -4px;
+    width: 48px;
+    height: 48px;
+    transition: all 0.4s;
+  }
+
   .label__size {
     padding-top: 30%;
   }
@@ -166,6 +177,17 @@
   }
 }
 @media (min-width: $desktop) {
+  .filter-input-radio--colour + label::after {
+    content: "";
+    position: absolute;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    top: -3px;
+    left: -3px;
+    width: 32px;
+    height: 32px;
+    transition: all 0.4s;
+  }
   .filter-input-radio--colour + label:hover:after {
     content: "";
     top: -3px;
@@ -202,11 +224,9 @@
   position: absolute;
   border: 1px solid $violet;
   border-radius: 50%;
-  transition: 0.5s;
 }
 .filter-input-radio--size:checked + .label__size {
   color: $violet;
-  transition: 0.5s;
 }
 
 .label__size {
@@ -223,6 +243,18 @@
 }
 
 @media (max-width: calc($desktop - 1px)) {
+  .filter-input-radio--size + label::after {
+    content: "";
+    position: absolute;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    transition: all 0.4s;
+  }
+
   .filter-input-radio--size + label:hover:after {
     top: 0;
     left: 0;
@@ -248,6 +280,18 @@
 }
 
 @media (min-width: $desktop) {
+  .filter-input-radio--size + label::after {
+    content: "";
+    position: absolute;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    top: -5px;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    transition: all 0.4s;
+  }
+
   .fieldset__list-size {
     margin-top: 12px;
     gap: 5px;
